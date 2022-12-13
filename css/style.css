@@ -60,29 +60,16 @@ li {
 .button {
     padding: 15px 25px;
     margin: 0 10px;
+    width: 220px;
     color: white;
     transition: 300ms;
-    width: 220px;
-}
-
-.button_empty {
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-.button_full {
     background-color: #00897b;
     border: 2px solid #00897b;
 }
 
-.button_empty:hover {
-    border: 2px dashed white;
-    background-color: #00897b;
-}
-
-.button_full:hover {
-    border: 2px dashed #00897b;
+.button:hover {
     background-color: transparent;
+    border: 2px solid white;
 }
 
 .button__services {
@@ -94,6 +81,23 @@ li {
     width: 150px;
     transition: 300ms;
     padding: 12px 10px;
+}
+
+.portfolio__button {
+    color: white;
+    background-color: #00897b;
+    border: 2px solid #00897b;
+    transition: 300ms;
+    padding: 15px 25px;
+    margin: 0 10px;
+    font-family: 'Open Sans Semibold';
+    margin-bottom: 120px;
+}
+
+.portfolio__button:hover,
+.focused {
+    background-color: transparent;
+    color: #212121;
 }
 
 /*About us*/
@@ -141,10 +145,6 @@ li {
     color: #212121;
 }
 
-.ourservices .row {
-    justify-content: space-between;
-}
-
 .ourservices .row:first-child {
     margin: 0 auto;
 }
@@ -163,7 +163,6 @@ li {
 
 .services:hover .button__services{
     color: white;
-    cursor: pointer;
     border: 2px solid white;
 }
 
@@ -175,7 +174,7 @@ li {
     margin-bottom: 20px;
 }
 
-.ourservices__title {
+.ourservices__title1 {
     font-family: 'Open Sans Bold';
     font-size: 30px;
     margin-bottom: 40px;
@@ -194,8 +193,9 @@ li {
     margin-bottom: 30px;
 }
 
-.ourservices__text {
+.ourservices__text1 {
     margin-bottom: 120px;
+    font-family: 'Open Sans Regular';
     font-size: 15px;
 }
 
@@ -205,4 +205,68 @@ li {
     transition: 300ms;
     font-size: 50px;
     color: black;
+}
+
+/*Portfolio*/
+
+.portfolio {
+    color: #212121;
+    padding-top: 120px;
+    padding-bottom: 135px;
+    text-align: center;
+}
+
+.portfolio .row:first-child div{
+    margin: 0 auto;
+}
+
+.portfolio__title {
+    font-family: 'Open Sans Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.portfolio__text {
+    margin-bottom: 120px;
+    font-family: 'Open Sans Regular';
+    font-size: 15px;
+}
+
+.portfolio img {
+    margin-bottom: 20px;
+}
+
+.portfolio .row:last-child .portfolio__button {
+    margin-top: 110px;
+    width: 220px;
+    margin-bottom: 0;
+}
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 300ms;
+}
+
+.text {
+    display: none;
+    transition: 300ms;
+    color: white;
+    width:100%;
+    z-index:100;
+    position: relative;
+    bottom:50%;
+    text-align: center;
+    font-family: "Open Sans Semibold";
+}
+
+.text p{
+    font-size: 15px;
+}
+
+.text h5{
+    font-size: 20px;
+}
+
+div[filter]:hover .text {
+    display: block;
 }
