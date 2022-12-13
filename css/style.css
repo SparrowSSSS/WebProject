@@ -37,7 +37,7 @@ li {
 
 /*Header*/
 
-.header > .container{
+.header{
     font-family: 'Open Sans Semibold';
     color: white;
     text-align: center;
@@ -86,6 +86,17 @@ li {
     background-color: transparent;
 }
 
+.button__services {
+    background-color: transparent;
+    border: 2px solid #212121;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    color: #212121;
+    padding: 18px 12px;
+    width: 150px;
+    transition: 300ms;
+}
+
 /*About us*/
 
 .aboutus {
@@ -97,7 +108,7 @@ li {
 
 .aboutus .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .aboutus .row:first-child {
@@ -120,4 +131,62 @@ li {
     margin-top: 40px;
     margin-bottom: 30px;
     font-family: 'Open Sans Semibold';
+}
+
+/*Our Services*/
+
+.ourservices{
+    background-color: #e4fdf9;
+    padding-top: 170px;
+    padding-bottom: 120px;
+    text-align: center;
+    color:#212121;
+}
+
+.ourservices .row {
+    display: flex;
+    justify-content: center;
+}
+
+.ourservices .row:first-child {
+    margin: 0 auto;
+}
+
+.ourservices .row:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.ourservices__title {
+    font-family: 'Open Sans Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.ourservices__text2{
+    font-family: 'Open Sans Regular';
+    font-family: 15px;
+    margin-bottom: 50px;
+}
+
+.ourservices__title2{
+    font-family: 'Open Sans Semibold';
+    font-family: 20px;
+    margin-bottom: 30px;
+}
+
+.ourservices img{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.services{
+    background-color: white;
+    padding-bottom: 50px;
+    height: 440px;
+    margin: 0 10px;
+    transition: 300ms;
+}
+
+.ourservices__text {
+    margin-bottom: 120px;
 }
