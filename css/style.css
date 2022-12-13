@@ -3,7 +3,6 @@
 /*Menu*/
 
 .menu-bar .row {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -37,7 +36,7 @@ li {
 
 /*Header*/
 
-.header{
+.header {
     font-family: 'Open Sans Semibold';
     color: white;
     text-align: center;
@@ -59,11 +58,11 @@ li {
 /*Button*/
 
 .button {
-   padding: 15px 25px;
-   margin: 0 10px;
-   color: white;
-   transition: 300ms;
-   width: 220px;
+    padding: 15px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 300ms;
+    width: 220px;
 }
 
 .button_empty {
@@ -77,8 +76,8 @@ li {
 }
 
 .button_empty:hover {
-        border: 2px dashed white;
-        background-color: #00897b;
+    border: 2px dashed white;
+    background-color: #00897b;
 }
 
 .button_full:hover {
@@ -92,9 +91,9 @@ li {
     font-family: 'Open Sans Semibold';
     font-size: 20px;
     color: #212121;
-    padding: 18px 12px;
     width: 150px;
     transition: 300ms;
+    padding: 12px 10px;
 }
 
 /*About us*/
@@ -107,8 +106,7 @@ li {
 }
 
 .aboutus .row {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .aboutus .row:first-child {
@@ -135,21 +133,42 @@ li {
 
 /*Our Services*/
 
-.ourservices{
-    background-color: #e4fdf9;
+.ourservices {
     padding-top: 170px;
     padding-bottom: 120px;
+    background-color: #e4fdf9;
     text-align: center;
-    color:#212121;
+    color: #212121;
 }
 
 .ourservices .row {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ourservices .row:first-child {
     margin: 0 auto;
+}
+
+.services {
+    background-color: white;
+    transition: 300ms;
+    padding: 0 60px;
+    padding-bottom: 50px;
+}
+
+.services:hover {
+    background-color: #00897b;
+    color: white;
+}
+
+.services:hover .button__services{
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.services:hover i {
+    color: white;
 }
 
 .ourservices .row:nth-child(2) {
@@ -162,31 +181,28 @@ li {
     margin-bottom: 40px;
 }
 
-.ourservices__text2{
+.ourservices__text2 {
     font-family: 'Open Sans Regular';
+    font-size: 15px;
     font-family: 15px;
     margin-bottom: 50px;
 }
 
-.ourservices__title2{
+.ourservices__title2 {
     font-family: 'Open Sans Semibold';
     font-family: 20px;
     margin-bottom: 30px;
 }
 
-.ourservices img{
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
-
-.services{
-    background-color: white;
-    padding-bottom: 50px;
-    height: 440px;
-    margin: 0 10px;
-    transition: 300ms;
-}
-
 .ourservices__text {
     margin-bottom: 120px;
+    font-size: 15px;
+}
+
+.ourservices i {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    transition: 300ms;
+    font-size: 50px;
+    color: black;
 }
