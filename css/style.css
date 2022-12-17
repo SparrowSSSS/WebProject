@@ -100,6 +100,42 @@ li {
     color: #212121;
 }
 
+.button__pricing {
+    background-color: transparent;
+    border: 2px solid #212121;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    color: #212121;
+    transition: 300ms;
+    padding: 15px 18px;
+}
+
+.button__pricing:hover {
+    color: white;
+    background-color: #00897b;
+    border: 2px solid #00897b;
+    font-family: 'Open Sans Semibold';
+}
+
+.button__blog {
+    margin: 0 auto;
+    margin-top: 126px;
+    max-width: 250px;
+    padding: 20px 60px;
+    color: white;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    background-color: #00897b;
+    border: 2px solid #00897b;
+    transition: 300ms;
+}
+
+.button__blog:hover {
+    color: #212121;
+    background-color: transparent;
+    border: 2px solid #212121;
+}
+
 /*About us*/
 
 .aboutus {
@@ -161,7 +197,7 @@ li {
     color: white;
 }
 
-.services:hover .button__services{
+.services:hover .button__services {
     color: white;
     border: 2px solid white;
 }
@@ -216,7 +252,7 @@ li {
     text-align: center;
 }
 
-.portfolio .row:first-child div{
+.portfolio .row:first-child div {
     margin: 0 auto;
 }
 
@@ -232,8 +268,11 @@ li {
     font-size: 15px;
 }
 
-.portfolio img {
+.portfolio .img {
     margin-bottom: 20px;
+    height: 370px;
+    background-size: cover;
+    background-position: 0 100%;
 }
 
 .portfolio .row:last-child .portfolio__button {
@@ -242,31 +281,293 @@ li {
     margin-bottom: 0;
 }
 
-div[filter]:hover img {
-    filter: brightness(50%);
-    transition: 300ms;
-}
-
-.text {
+.portfolio .text {
     display: none;
     transition: 300ms;
-    color: white;
-    width:100%;
-    z-index:100;
+    color: rgb(238, 0, 0);
+    width: 100%;
+    z-index: 100;
     position: relative;
-    bottom:50%;
+    top: 40%;
     text-align: center;
     font-family: "Open Sans Semibold";
 }
 
-.text p{
+.portfolio .text p {
     font-size: 15px;
 }
 
-.text h5{
+.portfolio.text h5 {
     font-size: 20px;
 }
 
-div[filter]:hover .text {
+.portfolio div[filter]:hover .text {
     display: block;
+}
+
+.portfolio .img:hover {
+    cursor: pointer;
+}
+
+.portfolio .img1 {
+    background-image: url('../img/Layer1.png');
+}
+
+.portfolio .img2 {
+    background-image: url('../img/image2.png');
+}
+
+.portfolio .img3 {
+    background-image: url('../img/image3.png');
+}
+
+.portfolio .img4 {
+    background-image: url('../img/image4.png');
+}
+
+.portfolio .img5 {
+    background-image: url('../img/image5.png');
+}
+
+.portfolio .img6 {
+    background-image: url('../img/image6.png');
+}
+
+/*Pricing*/
+
+.pricing {
+    background-color: #f0f1f1;
+    padding: 128px 0;
+    text-align: center;
+}
+
+.pricing .row:first-child div {
+    color: #212121;
+    margin: 0 auto;
+}
+
+.pricing__title1 {
+    font-family: 'Open Sans Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.pricing__text1 {
+    margin-bottom: 120px;
+    font-family: 'Open Sans Regular';
+    font-size: 15px;
+}
+
+.price_block {
+    background-color: #3949ab;
+    color: white;
+    font-family: 'Open Sans Regular';
+    padding-top: 50px;
+    padding-bottom: 70px;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    margin-bottom: 50px;
+}
+
+.pricing__title2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.pricing__text2 sup {
+    font-size: 25px;
+}
+
+.pricing__text2 span {
+    font-size: 50px;
+}
+
+.pricing__text2 sub {
+    font-size: 17px;
+}
+
+.pricing .plan ul {
+    list-style: none;
+    position: relative;
+    right: 15px;
+}
+
+.pricing .price {
+    background-color: white;
+    padding-bottom: 65px;
+    transition: 500ms;
+}
+
+.pricing .price:hover {
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.pricing .plan li {
+    margin-bottom: 35px;
+}
+
+.pricing .plan li:last-child {
+    margin-bottom: 65px;
+}
+
+.pricing .plan li p{
+    color: #212121;
+    font-family: 'Open Sans Light';
+    font-size: 17px;
+}
+
+.pricing .plan li hr {
+    width: 180px;
+}
+
+/*Team*/
+
+.team {
+    padding: 128px 0;
+    text-align: center;
+}
+
+.team .row:first-child div{
+    margin: 0 auto;
+    color: #212121;
+}
+
+.team__title1 {
+    font-family: 'Open Sans Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.team__text1 {
+    margin-bottom: 120px;
+    font-family: 'Open Sans Regular';
+    font-size: 15px;
+}
+
+.team__title2 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+}
+
+.team__text2 {
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-family: 'Open Sans Regular';
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a i {
+    transition: 300ms;
+}
+
+.icons .fa-solid {
+    color:#f0f1f1;
+}
+
+.icons .fab {
+    color:#00897b;
+}
+
+.icons a:hover .fa-solid {
+    color:#3949ab;
+}
+
+.icons a:hover .fab {
+    color: white;
+}
+
+.dots-style {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.dots-style button{
+    border: none;
+    background-color: #00897b;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.dots-style li[class="slick-active"] button {
+    background-color: #3949ab;
+}
+
+.team img {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+/*Blog*/
+
+.blog {
+    padding: 128px 0;
+    background-color: #e4fdf9;
+}
+
+.blog .row:first-child div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog__title1 {
+    font-family: 'Open Sans Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.blog__text1 {
+    margin-bottom: 120px;
+    font-family: 'Open Sans Regular';
+    font-size: 15px;
+}
+
+.blog img {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.blog .text {
+    margin-top: 63px;
+}
+
+.blog .text a {
+    font-size: 25px;
+    font-family: 'Open Sans Semibold';
+    text-decoration: none;
+    color:#212121;
+    transition: 300ms;
+}
+
+.blog .text a:hover {
+    color: #00897b;
+}
+
+.blog .info {
+    margin-top: 32px;
+    margin-bottom: 38px;
+}
+
+.blog span {
+    font-family: 'Open Sans Semibold';
+    font-size: 17px;
+}
+
+.blog span:last-child {
+    margin-left: 40px;
+}
+
+.blog .text p{
+    max-width: 440px;
+    font-size: 15px;
+    font-family: 'Open Sans Regular';
+    color:#212121;
 }
