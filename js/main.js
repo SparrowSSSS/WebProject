@@ -82,4 +82,9 @@ $(document).ready(function () {
             'flex-direction': 'column'
         });
     });
+    $('.serv').click(function () {
+        $('body,html').animate({
+            scrollTop: $('#service').offset().top
+        }, 300);
+    });
 });
